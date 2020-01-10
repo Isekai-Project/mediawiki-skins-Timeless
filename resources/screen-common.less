@@ -13,7 +13,7 @@ body {
 	color: @text;
 	background: @base30;
 	font-size: @font-size;
-	line-height: 1.5;
+	line-height: 1.4;
 }
 
 #mw-content {
@@ -30,6 +30,7 @@ body {
 
 .mw-body {
 	word-wrap: break-word;
+	min-height: calc(~"100vh - 12em");
 }
 
 #mw-footer-container {
@@ -171,6 +172,14 @@ body {
 
 		li {
 			margin: 0 0 1em 0;
+		}
+
+		a {
+			margin-left: 1em;
+		}
+
+		a:first {
+			margin-left: 0;
 		}
 	}
 
@@ -370,7 +379,7 @@ a.mw-selflink {
 
 .mw-indicators {
 	float: right;
-	margin: 0.75em 0 0 1em;
+	margin: 0.25em 0 0 1em;
 }
 
 .mw-indicator {
@@ -472,12 +481,12 @@ pre,
 
 	h1 {
 		font-size: 2em;
-		border-bottom: solid 3px @base70;
+		border-bottom: solid 3px @blue;
 	}
 
 	h2 {
 		font-size: 1.8em;
-		border-bottom: solid 2px @base70;
+		border-bottom: solid 2px @blue-bright;
 	}
 
 	h3 {
@@ -555,7 +564,7 @@ pre {
 }
 
 p {
-	margin: 1em 0;
+	margin: 0.8em 0 0.7em;
 }
 
 ul {
@@ -598,7 +607,7 @@ ul {
 
 .thumbcaption {
 	font-size: 95%;
-	padding: 0.5em 0 0;
+	padding: 0.5em 1em;
 	/* For the magnify link on empty captions */
 	min-height: 1em;
 }
@@ -617,11 +626,10 @@ ul {
 ul#filetoc,
 .toc,
 .mw-warning {
-	display: table;
+	display: inline-block;
 	.box;
 	padding: 1.25em 1.75em;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin: 1em 0;
 	min-width: 15em;
 }
 
@@ -665,6 +673,7 @@ ul#filetoc {
 
 .toctogglespan {
 	float: right;
+	display: none;
 }
 
 /* Remove brackets around the show/hide button of the TOC

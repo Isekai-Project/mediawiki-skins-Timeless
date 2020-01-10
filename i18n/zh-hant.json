@@ -15,6 +15,7 @@
 	"timeless-anonymous": "匿名",
 	"timeless-loggedinas": "以 '''$1''' 登入。",
 	"timeless-notloggedin": "尚未登入",
+	"timeless-search-placeholder": "搜尋或新建頁面",
 	"timeless-userpage": "{{GENDER:$1|使用者}}頁面",
 	"timeless-talkpage": "{{GENDER:$1|使用者}}討論",
 	"timeless-pagelog": "頁面日誌",
